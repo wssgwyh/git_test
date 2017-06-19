@@ -1,12 +1,16 @@
 {
   "private": true,
   "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
     "gulp": "^3.8.8",
     "laravel-elixir": "^1.0.0"
   },
   "config": {
     "ghooks": {
       "commit-msg": "./validate-commit-msg.js"
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
